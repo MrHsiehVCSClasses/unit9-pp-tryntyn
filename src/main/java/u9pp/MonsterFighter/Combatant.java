@@ -4,7 +4,7 @@ public abstract class Combatant {
     private int health;
     private int maxHealth;
     private String name;
-    private int attackPower;
+    protected int attackPower;
 
     public Combatant(String name, int maxHealth, int attack) {
         if(maxHealth < 1) {

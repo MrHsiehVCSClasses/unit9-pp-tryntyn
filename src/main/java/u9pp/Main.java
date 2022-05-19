@@ -3,7 +3,7 @@ package u9pp;
 import java.util.*;
 
 import u9pp.MonsterFighter.MonsterFighterGame;
-import u9pp.Chess.Chess;
+//import u9pp.Chess.Chess;
 
 
 public class Main 
@@ -25,8 +25,8 @@ public class Main
         } 
         else if (gameSelection == 2) 
         {
-            Chess chess = new Chess();
-            chess.play(scanner);
+            // Chess chess = new Chess();
+            // chess.play(scanner);
         }
         
         scanner.close();

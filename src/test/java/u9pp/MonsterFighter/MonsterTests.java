@@ -59,8 +59,9 @@ public class MonsterTests {
     @Test 
     public void takeTurn_damagesTarget() {
         testMonster.takeTurn(target);
-        assertEquals(MAX_HEALTH-ATTACK, target.getHealth(), "testMonster should do damage to the given target");
+        System.out.println(testMonster.getAttackPower());
         verify(target, Mockito.times(1).description("testMonster should call takeDamage one time on its target")).getAttacked(ATTACK);
+        assertEquals(MAX_HEALTH-ATTACK, target.getHealth(), "testMonster should do damage to the given target");
     }
 
     @Test 
